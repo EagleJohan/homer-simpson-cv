@@ -1,13 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap");
+
+:root {
+  --primary-color: #70d1fe;
+  --secondary-color: #f9f871;
+  --details-color: #75f8bb;
+}
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: var(--primary-color);
 }
 
-header h1 {
-    font-family: 'Indie Flower', cursive;
+h1 {
+  width: 300px;
+  font-family: "Indie Flower", cursive;
+  color: var(--secondary-color);
+  font-size: 40px;
+  margin: 20px auto;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  position: relative;
+  margin: 0 auto;
+  width: 700px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.profile-picture {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+header blockquote {
+  background-color: #fff;
+  position: absolute;
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  left: 0;
+  top: 0;
+  height: 200px;
+  width: 700px;
+  bottom: 33.33%;
+  border-radius: 10px;
+  padding: 20px 20px 20px 250px;
+}
+
+header address {
+  display: flex;
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+header address * {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  color: #000;
+  font-size: 12px;
+  margin: 0 0 0 10px;
+  border-radius: 5px;
+  padding: 5px 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);;
+}
+
+header address a:visited {
+  color: #000;
+}
+
+header address *:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header address *:active {
+  transform: scale(.97);
 }
