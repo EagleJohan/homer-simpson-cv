@@ -3,7 +3,7 @@
 :root {
   --primary-color: #70d1fe;
   --secondary-color: #f9f871;
-  --details-color: #75f8bb;
+  --details-color: #f1b2e4;
 }
 
 * {
@@ -13,7 +13,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  background-color: var(--primary-color);
+  background: rgb(112,209,254);
+  background: linear-gradient(0, rgba(241,178,228,1) 0%,rgba(112,209,254,1) 50%, rgba(112,209,254,1) 100%); 
 }
 
 h1 {
@@ -85,4 +86,32 @@ header address *:hover {
 
 header address *:active {
   transform: scale(.97);
+}
+
+section {
+  display: flex;
+  background-color: #fff;
+  width: 900px;
+  margin: 20px auto;
+  padding: 0 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+h2 {
+  border-right: 2px solid var(--details-color);
+  padding-right: 10px;
+  margin: 20px;
+}
+
+.job-container, .award-container, .education-container {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 900px) {
+  
 }
