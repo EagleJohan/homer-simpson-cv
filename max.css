@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+.max-container {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  
+  .max-container h1 {
+    margin: 120px auto;
+    font-size: 50px;
+    
+  }
