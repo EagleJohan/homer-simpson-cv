@@ -13,7 +13,18 @@ body {
   
   
   .max-container h1 {
-    margin: 120px auto;
+    margin: 120px auto 0;
     font-size: 50px;
-    
+  }
+
+  a, a:active, a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: green;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  .img {
+    margin-top: 30px;
   }

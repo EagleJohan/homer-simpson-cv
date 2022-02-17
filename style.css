@@ -177,14 +177,3 @@ h2 {
     width: 355px;
   }
 }
-.max-container {
-  margin: 0 auto;
-  background-color: red;
-  color: white;
-}
-
-
-.max-container h1 {
-  margin: 0 auto;
-  font-size: 50px;
-}
